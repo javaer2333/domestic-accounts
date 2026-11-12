@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# 查询报告可能包含个人信息，不入库
+domestic_results/
+*.csv
+*.xlsx
+*.txt
+!requirements.txt
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

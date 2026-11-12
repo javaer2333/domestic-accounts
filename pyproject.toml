@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domestic-accounts"
+version = "0.1.0"
+description = "查询国内平台公开账号：结构化接口匹配、公开索引检索与站内搜索入口"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["requests>=2.28"]
+keywords = ["osint", "username", "chinese-platforms", "public-profiles"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+domestic-accounts = "domestic_accounts.cli:main"
+
+[tool.setuptools]
+packages = ["domestic_accounts"]
